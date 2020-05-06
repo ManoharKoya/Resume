@@ -1,3 +1,50 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
  
@@ -136,9 +183,9 @@ Shell \textbullet{} Flutter \textbullet{} JavaScript \\
 \descript{| Snake game Automation }
 \location{Apr 2020 – May 2020  | Machine Learning}
 \begin{tightemize}
-\item Learnt and Used Genetic Algorithm for Implementation.
+\item Learnt and Implemented Genetic Algorithm for a population size of 1000 over 50 generations.
 \item Feed forward Artificial Neural Network is used as snake brain.
-\item Applied different combinations of Crossover-Mutation Methods for Statistical analysis of Genetic Algorithm. 
+\item Applied 4 combinations of Crossover-Mutation Methods for Statistical analysis of Genetic Algorithm. 
 \item Observed a 25.6\% score advantage with respect to time and 43.4\% time advantage with respect to constant score while using Weight-Neuron as Crossover-Mutation pair. 
 \end{tightemize}  
 
@@ -148,14 +195,14 @@ Shell \textbullet{} Flutter \textbullet{} JavaScript \\
 \begin{tightemize}
 \item Twitter Bot for Trend analysis, Topic suggestion, Hashtag Trend locator.
 \item Implemented on call/tag identification, trend analysis based on rate of increase in likes and retweets wrt time using Twitter python api.
-\item 78\% accurate subject identification with hashtag matching. 
+\item Acquired 78\% accuracy on subject identification with hashtag matching. 
 \end{tightemize}  
 
 \runsubsection{Drone-Path}
 \descript{| Drone Scheduling Algorithm }
 \location{ Feb 2020 | Algorithm Development }
 \begin{tightemize}
-\item Developed Drone Scheduling Algorithms for an NP-Hard problem.
+\item Developed 2 Drone Scheduling Algorithms for an NP-Hard problem.
 \item Idea implementation of Greedy \& Clustering based Algorithms based on Fuel locations along with ANN for algorithm selection.
 \item Initial 10\textsuperscript{6} tests were performed on both algorithms while simultaneously training the ANN. Rest were done on ANN output.
 \item Observed an 89\% accuracy on algorithm selection (ANN).
